@@ -44,3 +44,7 @@ go build vfs.go
 > ~ quit
 Bye!
 ```
+
+## pixel
+
+简单的数字图像处理程序
