@@ -38,7 +38,7 @@ go build vfs.go
 > ~ help
 ```
 
-输入`quit`推出vfs命令行
+输入`quit`退出vfs命令行
 
 ```bash
 > ~ quit

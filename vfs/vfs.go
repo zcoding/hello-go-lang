@@ -5,14 +5,14 @@ import (
   "flag"
   "fmt"
   "./fs"
-  // "./parse"
 )
 
-const vfsSize int64 = 1024
+// const vfsSize int64 = 1024 * 1024 * 1024 // 1GB
+const vfsSize int64 = 1024 // 1KB
 
 func main() {
-  path := flag.String("p", "", "The path of an existing zfs file.")
-  newPath := flag.String("n", "", "The path of a new zfs file.")
+  path := flag.String("p", "", "The path of an existing vfs file.")
+  newPath := flag.String("n", "", "The path of a new vfs file.")
   flag.Parse()
   if "" != *newPath {
     fs.TryCreateFS(*newPath, vfsSize)

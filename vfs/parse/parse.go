@@ -5,6 +5,14 @@ import (
   "errors"
 )
 
+/**
+ * 读取命令参数，解析成map和[]string
+ * 命名参数解析成map，剩下的参数按顺序组成数组
+ * @param {[]string} params 参数列表
+ * @return {map[string]string} 命名参数表
+ * @return {[]string} 剩余参数数组
+ * @return {error} 遇到非法的参数时返回错误，否则返回nil
+ */
 func ParseOptions(params []string) (map[string]string, []string, error) {
   options := make(map[string]string)
   rest := []string{}
