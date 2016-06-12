@@ -10,7 +10,7 @@ func init() {
 
 helpTable["help"] = `Usage: help [command]
 command:
-  cat | cd | cp | find | help | ls | mkdir | more | move | quit | rm | version
+  cat | cd | cp | find | help | ls | mkdir | more | mv | quit | rm | version
 
 Type 'quit' to exit the program.
 `

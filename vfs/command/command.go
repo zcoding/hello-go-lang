@@ -27,7 +27,7 @@ func execCommand(cmd string, options map[string]string, rest []string, cwd strin
       CommandList(options, rest, cwd)
     case "mkdir":
       CommandMkdir(options, rest, cwd)
-    case "move":
+    case "mv":
       CommandMove(options, rest, cwd)
     case "rm":
       CommandRemove(options, rest, cwd)
