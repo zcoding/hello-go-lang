@@ -26,7 +26,7 @@ func CommandCd(options map[string]string, rest []string, cwd string) (string, er
   } else if len(rest) > 0 {
     destDirectory = rest[0]
   } else {
-    destDirectory = "."
+    destDirectory = "~" // 如果没有指定目标目录，就使用用户目录（'~'）作为目标目录
   }
   fmt.Println("change to " + destDirectory)
   return destDirectory, nil
